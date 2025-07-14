@@ -1,0 +1,13 @@
+﻿title,type,question,A,B,C,D,E,F,G,H,I,J,answer,image
+Effects of Force,checkbox,关于力，哪个是对的？,Force can be seen / Daya dapat dilihat,Force cannot be seen / Daya tidak dapat dilihat,Its effect can be felt / Kesannya boleh diperhatikan,Its effect cannot be felt / Kesannya tidak boleh diperhatikan,,,,,,,"B,C",
+,checkbox,哪些是 Effects of force / Kesan daya ?,Moving a stationary object / Objek pegun bergerak,Stopping a moving object / Menghentikan objek yang bergerak,Changing the speed of an object that is in motion / Mengubah kelajuan objek yang sedang bergerak,Changing the direction of motion of an object / Mengubah arah gerakan objek,Changing the shape and size of an object / Mengubah bentuk dan saiz objek,Changing the colour of an object / Mengubah warna objek,Making an object float in water / Menyebabkan objek terapung dalam air,Producing heat in a wire / Menghasilkan haba dalam dawai,Creating energy / Menjana tenaga,Changing magnetic properties / Mengubah sifat magnet objek,"A,B,C,D,E",
+,radio,"An object weighs 50 N in air but only 35 N when immersed in water.
+What is the buoyant force acting on the object?
+
+Sebuah objek mempunyai berat 50 N di udara tetapi hanya 35 N apabila direndam dalam air.
+Berapakah daya apungan yang bertindak ke atas objek tersebut?",10N,15N,20N,35N,,,,,,,B,
+,radio,Density / Ketumpatan =,Mass ÷ Volume / Jisim ÷ Isi padu,Volume ÷ Mass / Isi Padu ÷ Jisim,Weight × Volume / Berat × Isi Padu,Weight ÷ Volume / Berat ÷ Isi padu,,,,,,,A,
+,radio,density / ketumpatan 小=,float / terapung,sink / tenggelam,,,,,,,,,A,
+,radio,density / ketumpatan 大=,float / terapung,sink / tenggelam,,,,,,,,,B,
+,radio,Why fresh egg is sink in water? / Kenapa telur segar tenggelam dalam air?,the egg is less dense than water / telur kurang tumpat daripada air,the egg is more dense than water / telur lebih tumpat daripada air,,,,,,,,,B,
+,radio,Why cork is float on water? / Kenapa gabus terapung pada air?,the egg is less dense than water / telur kurang tumpat daripada air,the egg is more dense than water / telur lebih tumpat daripada air,,,,,,,,,A,
