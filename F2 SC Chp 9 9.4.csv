@@ -1,0 +1,5 @@
+﻿title,type,question,A,B,C,D,answer,image
+吸热散热,checkbox,哪些是 good heat absorbers / penyerap haba yang lebih baik ?,dark / gelap,dull / kusam,white / cerah,shiny / berkilat,"A,B",
+,checkbox,哪些是 good heat radiators / pembebas haba yang lebih baik ?,dark / gelap,dull / kusam,white / cerah,shiny / berkilat,"A,B",
+,checkbox,哪些是 poor heat radiators / pembebas haba yang lebih lemah ?,dark / gelap,dull / kusam,white / cerah,shiny / berkilat,"C,D",
+,checkbox,哪些是 poor heat absorbers /  penyerap haba yang lebih lemah ?,dark / gelap,dull / kusam,white / cerah,shiny / berkilat,"C,D",
