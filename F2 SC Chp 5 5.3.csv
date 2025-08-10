@@ -1,0 +1,25 @@
+﻿title,type,question,A,B,C,D,E,F,answer,image
+Water Purification and Water Supply,radio,Boiling / Pendidihan 能解决哪个杂质？,microorganisms / mikroorganisma,suspended particles / bendasing terampai,dissolved substances / bahan terlarut,,,,A,
+,radio,Chlorination / Pengklorinan 能解决哪个杂质？,microorganisms / mikroorganisma,suspended particles / bendasing terampai,dissolved substances / bahan terlarut,,,,A,
+,checkbox,Distillation / Penyulingan 能解决哪个杂质？,microorganisms / mikroorganisma,suspended particles / bendasing terampai,dissolved substances / bahan terlarut,,,,"A,B,C",
+,radio,Filtration / Penurasan 能解决哪个杂质？,microorganisms / mikroorganisma,suspended particles / bendasing terampai,dissolved substances / bahan terlarut,,,,B,
+,radio,"Removes large suspended particles such as tree branches and leaves / 
+Menyingkirkan bendasing seperti ranting kayu dan daun",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,A,
+,radio,"Increases oxygen content in the water to get rid of unpleasant smell and taste / 
+Menambahkan kandungan oksigen di dalam air untuk menyingkirkan bau dan rasa yang kurang menyenangkan",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,B,
+,radio,"Alum is added so that mud particles stick together and sink to the bottom of the tank / 
+Alum dimasukkan supaya zarah-zarah lumpur bergumpal dan tenggelam",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,C,
+,radio,"Slaked lime is added to reduce the acidity of water / 
+Kapur mati ditambah untuk mengurangkan keasidan air",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,C,
+,radio,"Suspended particles deposit at the bottom of the tank / 
+Bahan terampai mendak di dasar tangki",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,D,
+,radio,"Removes remaining suspended particles through sand filters / 
+Menyingkirkan bendasing dengan penapis pasir",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,A,
+,radio,"to kill microorganisms in water / 
+untuk membunuh mikroorganisma di dalam air",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,E,
+,radio,"to prevent tooth decay / 
+untuk mengelakkan pereputan gigi",Filtration / Penapisan / Penurasan,Oxidation / Pengoksidaan,Coagulation / Penggumpalan,Sedimentation / Pengenapan,Chlorination / Pengklorinan,Fluoridation / Pemfluoridaan,F,
+,radio,加什么可以杀 microorganisms / mikroorganisma ？,Alum,Slaked lime / Kapur mati,Chlorine / Klorin,Sodium fluoride / Natrium florida,,,C,
+,radio,加什么可以让沙黏在一起？,Alum,Slaked lime / Kapur mati,Chlorine / Klorin,Sodium fluoride / Natrium florida,,,A,
+,radio,加什么可以减少水的酸性,Alum,Slaked lime / Kapur mati,Chlorine / Klorin,Sodium fluoride / Natrium florida,,,B,
+,radio,加什么可以避免蛀牙,Alum,Slaked lime / Kapur mati,Chlorine / Klorin,Sodium fluoride / Natrium florida,,,D,

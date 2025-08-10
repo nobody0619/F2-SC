@@ -1,0 +1,13 @@
+﻿title,type,question,A,B,C,D,E,F,answer,image
+Process,radio,Melting / Peleburan,Absorb heat / Menyerap haba,Release heat / Membebas haba,,,,,A,
+,radio,Boiling / Pendidihan,Absorb heat / Menyerap haba,Release heat / Membebas haba,,,,,A,
+,radio,Evaporation / Penyejatan,Absorb heat / Menyerap haba,Release heat / Membebas haba,,,,,A,
+,radio,Condensation / Kondensasi,Absorb heat / Menyerap haba,Release heat / Membebas haba,,,,,B,
+,radio,Freezing / Pembekuan,Absorb heat / Menyerap haba,Release heat / Membebas haba,,,,,B,
+,text,Solid / Pepejal → Liquid / Cecair,,,,,,,"melting,peleburan",
+,text,Solid / Pepejal → Gas,,,,,,,"sublimation,pemejalwapan",
+,text,Gas → Solid / Pepejal,,,,,,,"sublimation,pemejalwapan",
+,text,Gas → Liquid / Cecair,,,,,,,"condensation,kondensasi",
+,text,Liquid / Cecair → Gas (at Boiling point / pada takat didih),,,,,,,"boiling,pendidihan",
+,text,Liquid / Cecair → Gas (any temperature / pada sebarang suhu),,,,,,,"evaporation,penyejatan",
+,text,Liquid / Cecair → Solid / Pepejal,,,,,,,"freezing,pembekuan",

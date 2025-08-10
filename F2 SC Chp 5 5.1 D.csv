@@ -1,0 +1,6 @@
+﻿title,type,question,A,B,C,D,E,F,G,H,answer,image
+Evaporation,checkbox,哪些是 factor that affect the rate of evaporation / faktor mempengaruhi kadar penyejatan ?,Humidity / Kelembapan,Surrounding temperature / Suhu persekitaran,Exposed surface area of water / Luas permukaan air yang terdedah,Movement of air / Pergerakan udara,Colour of the water / Warna air,Depth of the water / Kedalaman air,Type of container material / Jenis bahan bekas,Presence of dissolved salt / Kehadiran garam terlarut,"A,B,C,D",
+,radio,Humidity / Kelembapan 越高，Rate of evaporation / Kadar penyejatan 越,High / Tinggi,Low / Rendah,,,,,,,B,
+,radio,Surrounding temperature / Suhu persekitaran 越高，Rate of evaporation / Kadar penyejatan 越,High / Tinggi,Low / Rendah,,,,,,,A,
+,radio,Movement of air / Pergerakan udara 越高，Rate of evaporation / Kadar penyejatan 越,High / Tinggi,Low / Rendah,,,,,,,A,
+,radio,Exposed surface area of water / Luas permukaan air yang terdedah 越大，Rate of evaporation / Kadar penyejatan 越,High / Tinggi,Low / Rendah,,,,,,,A,

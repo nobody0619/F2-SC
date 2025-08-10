@@ -1,0 +1,19 @@
+﻿title,type,question,A,B,C,D,answer,image
+Solution,radio,Sugar / Gula 属于,Solute / Zat terlarut,Solvent / Pelarut,Solution / Larutan,,A,
+,radio,Salt / Garam 属于,Solute / Zat terlarut,Solvent / Pelarut,Solution / Larutan,,A,
+,radio,Water / Air 属于,Solute / Zat terlarut,Solvent / Pelarut,Solution / Larutan,,B,
+,radio,Alcohol / Alkohol 属于,Solute / Zat terlarut,Solvent / Pelarut,Solution / Larutan,,B,
+,radio,糖水 属于,Solute / Zat terlarut,Solvent / Pelarut,Solution / Larutan,,C,
+,radio,盐水 属于,Solute / Zat terlarut,Solvent / Pelarut,Solution / Larutan,,C,
+,radio,"Less amount of solute in the solvent / 
+Kuantiti zat terlarut yang sedikit di dalam pelarut",Dilute solution / Larutan Cair,Concentrated solution / Larutan Pekat,Saturated solution / Larutan Tepu,,A,
+,radio,"Can dissolve more solute / 
+Boleh melarutkan banyak lagi zat terlarut",Dilute solution / Larutan Cair,Concentrated solution / Larutan Pekat,Saturated solution / Larutan Tepu,,A,
+,radio,"More amount of solute in the solvent / 
+Kuantiti zat terlarut yang banyak di dalam pelarut",Dilute solution / Larutan Cair,Concentrated solution / Larutan Pekat,Saturated solution / Larutan Tepu,,B,
+,radio,"Can dissolve less solute / 
+Boleh melarutkan sedikit sahaja lagi zat terlarut",Dilute solution / Larutan Cair,Concentrated solution / Larutan Pekat,Saturated solution / Larutan Tepu,,B,
+,radio,"Excess amount of solute in the solvent / 
+Kuantiti zat terlarut yang berlebihan di dalam pelarut",Dilute solution / Larutan Cair,Concentrated solution / Larutan Pekat,Saturated solution / Larutan Tepu,,C,
+,radio,"Cannot dissolve any more solute and form precipitate / 
+Tidak boleh melarutkan zat terlarut lagi dan menghasilkan mendakan",Dilute solution / Larutan Cair,Concentrated solution / Larutan Pekat,Saturated solution / Larutan Tepu,,C,
