@@ -1,0 +1,11 @@
+﻿title,type,question,A,B,C,D,E,F,G,answer,image
+Digestive System Level 3,radio,Amylase / Amilase 消化什么？,Starch / Kanji,Protein,Fat / Lemak,Maltose / Maltosa,Polypeptide / Polipeptida,Dipeptide / Dipeptida,,A,
+,radio,Stomach / Perut 的 Protease 消化什么？,Starch / Kanji,Protein,Fat / Lemak,Maltose / Maltosa,Polypeptide / Polipeptida,Dipeptide / Dipeptida,,B,
+,radio,Pancreas / Pankreas 的 Protease 消化什么？,Starch / Kanji,Protein,Fat / Lemak,Maltose / Maltosa,Polypeptide / Polipeptida,Dipeptide / Dipeptida,,E,
+,radio,Small intestine / Usus kecil 的 Protease 消化什么？,Starch / Kanji,Protein,Fat / Lemak,Maltose / Maltosa,Polypeptide / Polipeptida,Dipeptide / Dipeptida,,F,
+,radio,Lipase 消化什么？,Starch / Kanji,Protein,Fat / Lemak,Maltose / Maltosa,Polypeptide / Polipeptida,Dipeptide / Dipeptida,,C,
+,radio,Maltase / Maltase 消化什么？,Starch / Kanji,Protein,Fat / Lemak,Maltose / Maltosa,Polypeptide / Polipeptida,Dipeptide / Dipeptida,,D,
+,radio,哪个是amylase / amilase 的消化过程？,Starch / Kanji → Maltose / Maltosa,Protein → Polypeptide / Polipeptida,Fat → Fatty acid + Glycerol / Lemak → Asid lemak + Gliserol,Maltose / Maltosa → Glucose / Glukosa,Dipeptide / Dipeptida → Amino acid / Asid amino,Polypeptide / Polipeptida → Dipeptide / Dipeptida,,A,
+,radio,哪个是 Protease 在stomach / perut 的消化过程？,Starch / Kanji → Maltose / Maltosa,Protein → Polypeptide / Polipeptida,Fat → Fatty acid + Glycerol / Lemak → Asid lemak + Gliserol,Maltose / Maltosa → Glucose / Glukosa,Dipeptide / Dipeptida → Amino acid / Asid amino,Polypeptide / Polipeptida → Dipeptide / Dipeptida,,B,
+,radio,哪个是 Protease 在 Duodenum 的消化过程？,Starch / Kanji → Maltose / Maltosa,Protein → Polypeptide / Polipeptida,Fat → Fatty acid + Glycerol / Lemak → Asid lemak + Gliserol,Maltose / Maltosa → Glucose / Glukosa,Dipeptide / Dipeptida → Amino acid / Asid amino,Polypeptide / Polipeptida → Dipeptide / Dipeptida,,F,
+,radio,哪个是 Protease 在 Small intestine / Usus kecil 的消化过程？,Starch / Kanji → Maltose / Maltosa,Protein → Polypeptide / Polipeptida,Fat → Fatty acid + Glycerol / Lemak → Asid lemak + Gliserol,Maltose / Maltosa → Glucose / Glukosa,Dipeptide / Dipeptida → Amino acid / Asid amino,Polypeptide / Polipeptida → Dipeptide / Dipeptida,,E,

@@ -1,0 +1,12 @@
+﻿title,type,question,A,B,C,D,E,F,G,answer,image
+Classes of Food,radio,supplies a lot of energy / membekalkan tenaga yang banyak,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,A,
+,radio,for growth / untuk pertumbuhan,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,B,
+,radio,repair damaged tissues / pembaikan tisu-tisu badan yang rosak,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,B,
+,radio,high energy source and storage / sumber dan simpanan tenaga yang tinggi,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,C,
+,radio,protects the organs / melindungi organ badan,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,C,
+,checkbox,maintain good health / mengekalkan kesihatan yang baik,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,"E,F",
+,radio,cannot be broken down by the digestive system / tidak dapat diuraikan oleh sistem pencernaan,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,G,
+,radio,stimulate peristalsis / merangsang peristalsis,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,G,
+,radio,chemical solvent / pelarut bahan kimia,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,D,
+,radio,transportation medium of nutrients and oxygen into the cells / medium pengangkutan nutrien dan oksigen ke dalam sel,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,D,
+,checkbox,regulates body temperature / mengawal atur suhu badan,Carbohydrate / Karbohidrat,Protein,Fat / Lemak,Water / Air,Mineral,Vitamin,Fibre / Pelawas,"C,D",

@@ -1,0 +1,8 @@
+﻿title,type,question,A,B,C,D,E,F,G,H,I,J,K,L,answer,image
+Balanced diet,checkbox,哪些因素会导致卡路里需求量的差异,Body size / Saiz badan,Age / Umur,Work / Pekerjaan,Gender / Jantina,State of health / Keadaan kesihatan,Climate / Iklim,Genetics / Genetik,Sleep / Tidur,Stress / Tekanan,Medication / Ubat,Emotion / Emosi,Intelligent / Kecerdasan,"A,B,C,D,E,F",
+,radio,What is balanced diet? / Apakah gizi seimbang?,A diet that contains all the food classes in the right quantities that are required by the body / Satu pemakanan yang mengandungi semua kelas makanan yang diperlukan oleh tubuh badan dalam kuantiti yang betul,A diet that has all the food classes but not always in the right amounts / Satu pemakanan yang ada semua kelas makanan tetapi tidak selalu dalam jumlah yang betul,A diet that includes all the food classes but sometimes in different amounts / Satu pemakanan yang termasuk semua kelas makanan tetapi kadang-kadang dalam jumlah yang berbeza,A diet that contains all the food classes but the amounts might change / Satu pemakanan yang mengandungi semua kelas makanan tetapi jumlahnya mungkin berubah,,,,,,,,,A,
+,radio,体型大的人需要的能量比体型小的,多,少,,,,,,,,,,,A,
+,radio,男生需要的能量比女生,多,少,,,,,,,,,,,A,
+,radio,小孩&青少年需要的能量比成人,多,少,,,,,,,,,,,A,
+,radio,在办公室工作的人需要的能量比农夫,多,少,,,,,,,,,,,B,
+,radio,住在天气热的地方的人需要的能量比较,多,少,,,,,,,,,,,B,

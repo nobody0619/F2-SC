@@ -1,0 +1,6 @@
+﻿title,type,question,A,B,C,D,E,F,G,answer,image
+Mineral,checkbox,Rickets / Riket,Calcium / Kalsium,Sodium / Natrium,Iron / Besi,Iodine / Iodin,Phosphorus / Fosforus,Potassium / Kalium,Protein,"A,E",
+,checkbox,muscle cramps / kekejangan otot,Calcium / Kalsium,Sodium / Natrium,Iron / Besi,Iodine / Iodin,Phosphorus / Fosforus,Potassium / Kalium,Protein,"B,F",
+,radio,Anaemia / Anemia,Calcium / Kalsium,Sodium / Natrium,Iron / Besi,Iodine / Iodin,Phosphorus / Fosforus,Potassium / Kalium,Protein,C,
+,radio,Goiter / Goiter,Calcium / Kalsium,Sodium / Natrium,Iron / Besi,Iodine / Iodin,Phosphorus / Fosforus,Potassium / Kalium,Protein,D,
+,radio,Kwashiorkor / Kwasyiorkor,Calcium / Kalsium,Sodium / Natrium,Iron / Besi,Iodine / Iodin,Phosphorus / Fosforus,Potassium / Kalium,Protein,G,

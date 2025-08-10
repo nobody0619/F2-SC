@@ -1,0 +1,9 @@
+﻿title,type,question,A,B,C,D,E,answer,image
+Food Test,radio,Iodine test / Ujian Iodin,starch / kanji,glucose / glukosa,protein,fat / lemak,,A,
+,radio,Iodine test / Ujian Iodin 如果有结果是什么颜色？,Dark Blue / Biru Tua,Brick red precipitate forms / Mendakan merah terbentuk,A white colour suspension forms / Ampaian warna putih terbentuk,,,A,
+,radio,Benedict's test / Ujian Benedict 如果有结果是什么颜色？,Dark Blue / Biru Tua,Brick red precipitate forms / Mendakan merah terbentuk,A white colour suspension forms / Ampaian warna putih terbentuk,,,B,
+,radio,Millon's test / Ujian Millon 如果有结果是什么颜色？,Dark Blue / Biru Tua,Brick red precipitate forms / Mendakan merah terbentuk,A white colour suspension forms / Ampaian warna putih terbentuk,,,B,
+,radio,Alcohol-emulsion test / Ujian alkohol-emulsi 如果有结果是什么颜色？,Dark Blue / Biru Tua,Brick red precipitate forms / Mendakan merah terbentuk,A white colour suspension forms / Ampaian warna putih terbentuk,,,C,
+,radio,Benedict's test / Ujian Benedict,starch / kanji,glucose / glukosa,protein,fat / lemak,,B,
+,radio,Millon's test / Ujian Millon,starch / kanji,glucose / glukosa,protein,fat / lemak,,C,
+,radio,Alcohol-emulsion test / Ujian alkohol-emulsi,starch / kanji,glucose / glukosa,protein,fat / lemak,,D,
