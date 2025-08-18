@@ -1,0 +1,8 @@
+﻿title,type,question,A,B,C,D,answer,image
+声波特征,text,声音是通过什么产生的？,,,,,"vibration,getaran,vibrate,bergetar",
+,checkbox,声音能通过哪些 Medium 传输？,Solid / Pepejal,Liquid / Cecair,Gas,Vacuum / Vakum,"A,B,C",
+,radio,声音不能通过哪些 Medium 传输？,Solid / Pepejal,Liquid / Cecair,Gas,Vacuum / Vakum,D,
+,radio,哪个传播声音速度最快？,Solid / Pepejal,Liquid / Cecair,Gas,Vacuum / Vakum,A,
+,radio,哪个传播声音速度最慢？,Solid / Pepejal,Liquid / Cecair,Gas,Vacuum / Vakum,C,
+,checkbox,哪个特征会导致 Reflection of sound / Pantulan bunyi ?,Hard/ Keras,Smooth / Licin,Soft / Lembut,Rough / Kasar,"A,B",
+,checkbox,哪个特征会导致 Absorption of sound / Penyerapan bunyi ?,Hard/ Keras,Smooth / Licin,Soft / Lembut,Rough / Kasar,"C,D",
