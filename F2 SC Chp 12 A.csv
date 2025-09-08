@@ -1,0 +1,13 @@
+﻿title,type,question,A,B,C,D,E,F,G,H,answer,image
+Solar System,radio,Astronomical Unit (A.U.) / Unit Astronomi (A.U.) 是多少?,1.5 × 10^8 km,9.5 × 10^12 km,3.8 × 10^5 km,6.4 × 10^3 km,,,,,A,
+,radio,Light Years (ly) / Tahun Cahaya (ly) 是多少?,1.5 × 10^8 km,9.5 × 10^12 km,3.8 × 10^5 km,6.4 × 10^3 km,,,,,B,
+,radio,"土星距离太阳 1.43 × 10^9 km, 如何换算成 A.U. ?",(1.43 × 10^9) ÷ (1.5 × 10^8),(1.43 × 10^9) ÷ (9.5 × 10^12),(1.5 × 10^8) ÷ (1.43 × 10^9),(9.5 × 10^12) ÷ (1.43 × 10^9),,,,,A,
+,radio,"土星距离太阳 1.43 × 10^9 km, 如何换算成 ly ?",(1.43 × 10^9) ÷ (1.5 × 10^8),(1.43 × 10^9) ÷ (9.5 × 10^12),(1.5 × 10^8) ÷ (1.43 × 10^9),(9.5 × 10^12) ÷ (1.43 × 10^9),,,,,B,
+,radio,水星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,A,
+,radio,金星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,B,
+,radio,地球,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,C,
+,radio,火星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,D,
+,radio,木星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,E,
+,radio,土星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,F,
+,radio,天王星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,G,
+,radio,海王星,Mercury / Utarid,Venus / Zuhrah,Earth / Bumi,Mars / Marikh,Jupiter / Musytari,Saturn / Zuhal,Uranus / Uranus,Neptune / Neptun,H,
