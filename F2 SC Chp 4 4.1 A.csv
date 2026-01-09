@@ -1,3 +1,14 @@
-﻿title,type,question,A,B,C,D,E,F,G,H,I,J,K,L,M,answer,image
-传染病,checkbox,哪些是 Infectious disease / Penyakit berjangkit?,Tuberculosis / Tuberkulosis,Flu / Selesema,Ringworm / Kurap,Tinea / Panau,Leptospirosis / Penyakit kencing tikus,Dengue fever / Demam denggi,Malaria fever / Demam malaria,Zika fever / Demam Zika,Cancer / Kanser,Hypertension / Hipertensi,Diabetes,Asthma / Asma,Cardiovascular diseases / Penyakit kardiovaskular,"A,B,C,D,E,F,G,H",
-,checkbox,哪些是 Non-infectious disease / Penyakit tidak berjangkit?,Tuberculosis / Tuberkulosis,Flu / Selesema,Ringworm / Kurap,Tinea / Panau,Leptospirosis / Penyakit kencing tikus,Dengue fever / Demam denggi,Malaria fever / Demam malaria,Zika fever / Demam Zika,Cancer / Kanser,Hypertension / Hipertensi,Diabetes,Asthma / Asma,Cardiovascular diseases / Penyakit kardiovaskular,"I,J,K,L,M",
+﻿title,type,question,A,B,answer,image
+传染病,radio,Tuberculosis / Tuberkulosis, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Flu / Selesema, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Ringworm / Kurap, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Tinea / Panau, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Leptospirosis / Penyakit kencing tikus, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Dengue fever / Demam denggi, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Zika fever / Demam Zika, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Malaria fever / Demam malaria, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,A,
+,radio,Cancer / Kanser, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,B,
+,radio,Hypertension / Hipertensi, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,B,
+,radio,Diabetes, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,B,
+,radio,Asthma / Asma, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,B,
+,radio,Cardiovascular diseases / Penyakit kardiovaskular, Infectious disease / Penyakit berjangkit,Non-infectious disease / Penyakit tidak berjangkit,B,
