@@ -17,7 +17,7 @@
     #chapters,#quiz,#finish{display:none}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 4px 16px rgba(0,0,0,.04)}
     .floating-back{position:sticky;top:10px;left:0;text-align:left;z-index:5;margin-bottom:10px}
-    .floating-back button,.btn{padding:10px 14px;border-radius:999px;border:0;background:#111827;color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font:inherit;line-height:1.2}
+    .floating-back button,.btn{padding:10px 14px;border-radius:999px;border:0;background:#111827;color:#fff;cursor:pointer}
     .btn.secondary{background:#fff;color:#111827;border:1px solid #111827}
     .btn.ghost{background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe}
     .btn.boss{background:var(--boss)}
@@ -162,15 +162,14 @@
 <div id="login" class="login-wrap">
   <div class="card">
     <h2 id="loginTitle"></h2>
-    <p class="muted">请输入姓名和每月密码</p>
+    <p class="muted">请输入姓名和月密码</p>
     <input type="text" id="username" placeholder="姓名 / Name"/>
-    <input type="password" id="monthPassword" placeholder="每月密码 / Monthly Password"/>
+    <input type="password" id="monthPassword" placeholder="月密码 / Monthly Password"/>
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
       <button id="startBtn" class="btn" type="button">进入 / Start</button>
       <button id="rulesBtn" class="btn ghost" type="button">📜 游戏规则</button>
       <button id="refreshBtn" class="btn ghost" type="button">🔄 更新页面</button>
       <button id="installBtn" class="btn ghost" type="button">📲 加入手机首页</button>
-      <a class="btn ghost" href="parent.html" target="_blank" rel="noopener">👨‍👩‍👧 家长查询</a>
     </div>
     <div class="theme-panel" id="themePanelLogin">
       <button class="theme-dot" data-theme="soft">白色</button>
@@ -180,11 +179,11 @@
       <button class="theme-dot" data-theme="dark">Dark</button>
     </div>
     <p id="loginMsg" class="muted"></p>
-    <p class="hint">章节会先显示，怪兽状态、错题数与题数会在后台自动补上。若不能登入，请点“更新页面”或用 Chrome / Safari 打开。提交成绩时也需要一点时间，请不要马上关闭页面。</p>
+    <p class="hint">首次加载题库会稍微慢一点，请耐心等几秒。若不能登入，请点“更新页面”或用 Chrome / Safari 打开。提交成绩时也需要一点时间，请不要马上关闭页面。</p>
     <div class="footer-help">
       有问题可直接 WhatsApp 老师：<a href="https://wa.me/60167312519" target="_blank" rel="noopener">016-7312519</a>
     </div>
-    <div class="version-tag" id="versionTag">版本：2026.06.04.7</div>
+    <div class="version-tag" id="versionTag">版本：2026.06.04.1</div>
   </div>
 </div>
 
@@ -210,7 +209,6 @@
       <button id="topRulesBtn" class="btn ghost small" type="button">📜 游戏规则</button>
       <button id="topBoardBtn" class="btn ghost small" type="button">🏆 排行榜</button>
       <button id="wrongBookBtn" class="btn ghost small" type="button">📝 错题本<span id="wrongBookCountBadge"></span></button>
-      <a class="btn ghost small" href="parent.html" target="_blank" rel="noopener">👨‍👩‍👧 家长查询</a>
       
     </div>
     <div class="muted" style="margin-top:8px;">背景颜色 / Theme</div>
@@ -227,7 +225,7 @@
       <div class="xp-text" id="statExp">⚡0 / 100</div>
     </div>
     <div id="levelUpMsg" class="levelup"></div>
-    <div class="version-tag">版本：2026.06.04.7</div>
+    <div class="version-tag">版本：2026.06.04.1</div>
   </div>
   <div id="chapterWrap"></div>
 </div>
@@ -338,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const SCRIPT_URL = document.getElementById('postForm').getAttribute('action');
   const STORAGE_KEY = 'kee_quiz_game_auth_v1';
   const TZ = 'Asia/Kuala_Lumpur';
-  const APP_VERSION = '2026.06.04.7';
+  const APP_VERSION = '2026.06.04.1';
   const PENDING_SCORE_KEY = 'kee_pending_scores_v2';
   let serverBaseMs = 0;
   let perfBaseMs = 0;
@@ -370,11 +368,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let wrongBookMap = {};
   let currentWrongId = '';
   let countCache = new Map();
-  let questionCountCacheLoaded = false;
-  let questionCountLoadingPromise = null;
   let monsterQuestionCache = new Map();
   let progressState = { exp:0, level:1, monsters:{}, bosses:{} };
-  let progressLoadingPromise = null;
 
   ensureLatestVersion_();
 
@@ -535,9 +530,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const nm = document.getElementById('username').value.trim();
     const pwd = document.getElementById('monthPassword').value.trim();
     const msg = document.getElementById('loginMsg');
-    if (!nm || !pwd) return msg.textContent = '请输入姓名和每月密码';
+    if (!nm || !pwd) return msg.textContent = '请输入姓名和月密码';
     msg.textContent = '正在验证...';
-    setLoading(true, '正在验证每月密码，请稍等...');
+    setLoading(true, '正在验证密码并加载题库，请稍等...');
     try {
       const r = await apiFetch({ action:'checkPassword', book, name:nm, password:pwd, ua:getUserAgent() }, 1);
       if (!r.ok) { msg.textContent = explainLoginError(r.error || '验证失败'); return; }
@@ -545,19 +540,11 @@ document.addEventListener('DOMContentLoaded', () => {
       user = normalizeName(nm);
       saveAuth(displayUser, pwd);
       await loadChapters();
-      registerQuestionSourcesInBackground();
-
-      // 验证成功后先显示章节，不等待等级、怪兽、Boss、错题数与题数资料。
-      progressState = { exp:0, level:1, monsters:{}, bosses:{} };
+      try { await loadProgress(); } catch (_) { progressState = { exp:0, level:1, monsters:{}, bosses:{} }; }
       updateHeader();
+      refreshWrongBookCount();
       document.getElementById('login').style.display = 'none';
       showChapterList();
-
-      // 全部改成后台补上，不阻塞登入。
-      loadProgressInBackground();
-      loadQuestionCountCacheInBackground();
-      setTimeout(() => refreshWrongBookCount(), 300);
-
       msg.textContent = '';
     } catch (e) {
       console.error(e);
@@ -578,9 +565,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function explainLoginError(errMsg){
     const s = String(errMsg || '');
-    if (s.includes('每月密码错误') || s.includes('有效日期')) return '密码不对，或当前日期不在有效期内。请再检查一次。';
-    if (s.includes('Missing')) return '请输入姓名和每月密码。';
-    if (s.includes('empty')) return '系统里还没有每月密码资料，请联络老师。';
+    if (s.includes('月密码错误') || s.includes('有效日期')) return '密码不对，或当前日期不在有效期内。请再检查一次。';
+    if (s.includes('Missing')) return '请输入姓名和月密码。';
+    if (s.includes('empty')) return '系统里还没有月密码资料，请联络老师。';
     return '连接验证失败，请刷新后重试；若还是不行，请改用 Chrome / Safari，或联络老师。';
   }
 
@@ -690,26 +677,6 @@ document.addEventListener('DOMContentLoaded', () => {
       serverBaseMs = Number(r.serverNow || 0);
       perfBaseMs = performance.now();
     }
-  }
-
-  function loadProgressInBackground(){
-    if (progressLoadingPromise) return progressLoadingPromise;
-
-    progressLoadingPromise = loadProgress()
-      .then(() => {
-        updateHeader();
-        // 怪兽与 Boss 状态加载完成后，重新绘制章节卡片。
-        if (document.getElementById('chapters').style.display !== 'none') {
-          showChapterList();
-        }
-        return true;
-      })
-      .catch(() => false)
-      .finally(() => {
-        progressLoadingPromise = null;
-      });
-
-    return progressLoadingPromise;
   }
 
   function getMainChapterNo(chapterStr){
@@ -879,99 +846,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.getElementById('chapters').style.display = 'block';
     focusLastCard();
-    loadQuestionCountCacheInBackground();
   }
 
   function buildMonsterId(row){
     return [book, row[chapterKey]||'', row[labelKey]||'', row[sheetKey]||''].join('||');
   }
 
-
-  function absoluteQuestionUrl(url){
-    try { return new URL(String(url || ''), location.href).href; }
-    catch(e) { return String(url || ''); }
-  }
-
-  function registerQuestionSourcesInBackground(){
-    try {
-      if (!rows.length || !chapterKey || !labelKey || !sheetKey) return;
-      const sources = rows.map(r => ({
-        quizId: r[chapterKey] || '',
-        label: r[labelKey] || '',
-        sheetURL: absoluteQuestionUrl(r[sheetKey] || '')
-      })).filter(x => x.quizId && x.sheetURL);
-
-      const body = new URLSearchParams({
-        action:'registerQuestionSources',
-        book,
-        sources:JSON.stringify(sources),
-        v:APP_VERSION
-      });
-
-      fetch(SCRIPT_URL, {
-        method:'POST',
-        body,
-        mode:'no-cors',
-        keepalive:true,
-        credentials:'omit',
-        cache:'no-store'
-      }).catch(()=>{});
-    } catch(e) {}
-  }
-
-  async function loadQuestionCountCache(){
-    const r = await apiFetch({ action:'getQuestionCounts', book }, 1);
-    if (r && r.ok && r.counts) {
-      Object.entries(r.counts).forEach(([url, count]) => {
-        countCache.set(absoluteQuestionUrl(url), Number(count || 0));
-      });
-      questionCountCacheLoaded = true;
-      updateQuestionCountDisplays();
-      return true;
-    }
-    questionCountCacheLoaded = false;
-    return false;
-  }
-
-  function loadQuestionCountCacheInBackground(){
-    if (questionCountCacheLoaded) {
-      updateQuestionCountDisplays();
-      return Promise.resolve(true);
-    }
-    if (questionCountLoadingPromise) return questionCountLoadingPromise;
-
-    questionCountLoadingPromise = loadQuestionCountCache()
-      .catch(() => {
-        questionCountCacheLoaded = false;
-        return false;
-      })
-      .finally(() => {
-        questionCountLoadingPromise = null;
-      });
-
-    return questionCountLoadingPromise;
-  }
-
-  function updateQuestionCountDisplays(){
-    if (!rows.length || !sheetKey) return;
-    for (const row of rows) {
-      const monsterId = buildMonsterId(row);
-      const el = document.getElementById('count_' + hashId(monsterId));
-      if (!el) continue;
-
-      const key = absoluteQuestionUrl(row[sheetKey]);
-      if (countCache.has(key)) {
-        el.textContent = String(countCache.get(key));
-      } else {
-        el.textContent = '-';
-      }
-    }
-  }
-
   async function getQuestionCount(url){
-    // 只使用 QuestionCounts 缓存，不再为了显示题数逐份读取 CSV。
-    const key = absoluteQuestionUrl(url);
-    return countCache.has(key) ? countCache.get(key) : null;
+    if (countCache.has(url)) return countCache.get(url);
+    const cnt = await new Promise(resolve => {
+      Papa.parse(url, {
+        download:true, header:true, skipEmptyLines:true,
+        complete(r2){
+          const c = r2.data.filter(q => q.question && String(q.question).trim()).length;
+          resolve(c);
+        },
+        error(){ resolve(0); }
+      });
+    });
+    countCache.set(url, cnt);
+    return cnt;
   }
 
   function buildMonsterItem(row){
@@ -982,8 +876,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const st = progressState.monsters[monsterId] || {};
     const titleText = `${row[chapterKey]}${row[labelKey] ? ' — ' + row[labelKey] : ''}`;
     const countId = 'count_' + hashId(monsterId);
-    const countKey = absoluteQuestionUrl(row[sheetKey]);
-    const cnt = countCache.has(countKey) ? String(countCache.get(countKey)) : '...';
+    const cnt = '...';
+    getQuestionCount(row[sheetKey]).then(c => {
+      const el = document.getElementById(countId);
+      if (el) el.textContent = String(c);
+    });
     const now = nowMs();
     const isDead = st.reviveAt && Number(st.reviveAt) > now;
     const statusText = isDead ? `💀 已击败（${daysLeft(st.reviveAt)}后复活）` : '🟢 存活';
@@ -1395,13 +1292,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const quizEndTime = Date.now();
     const usedSeconds = chapterStart ? Math.floor((quizEndTime - chapterStart)/1000) : 0;
-    // 第一次答对准确率：
-    // correct 包含后来增加的重复题答对次数；每次答错会增加 2 题。
-    // 第一次就答对题数 = correct - 2 × wrong
-    // 原本题数 = correct - wrong
-    const firstTryCorrect = Math.max(0, correct - 2 * wrong);
-    const originalTotal = Math.max(1, correct - wrong);
-    const accuracy = Math.max(0, Math.min(1, firstTryCorrect / originalTotal));
+    const accuracy = baseTotal ? Math.min(1, correct / baseTotal) : 0;
     const accuracyPct = Math.round(accuracy * 100);
     let battleMsg = '';
     let exp = 10;
@@ -1467,7 +1358,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateHeader(Number(progressState.level || 1));
 
     document.getElementById('finish-msg').textContent = `恭喜 ${displayUser || user}，本次完成！`;
-    document.getElementById('stats').textContent = `模式：${modeLabel(currentMode)}｜得分: ${score}｜第一次答对准确率: ${accuracyPct}%｜答对 ${correct} 题｜答错 ${wrong} 题｜用时：${formatDuration(usedSeconds)}｜EXP +${currentExpGain}`;
+    document.getElementById('stats').textContent = `模式：${modeLabel(currentMode)}｜得分: ${score}｜正确率: ${accuracyPct}%｜答对 ${correct} 题｜答错 ${wrong} 题｜用时：${formatDuration(usedSeconds)}｜EXP +${currentExpGain}`;
     document.getElementById('battle-result').textContent = battleMsg;
     document.getElementById('submit-status').textContent = '正在送出成绩…';
 
